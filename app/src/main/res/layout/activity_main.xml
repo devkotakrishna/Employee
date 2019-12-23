@@ -28,6 +28,7 @@
         android:layout_height="wrap_content"
         android:id="@+id/btnSearch"
         android:layout_margin="20dp"
+        android:textSize="20sp"
         android:text="Search Employee"/>
 
     <Button
@@ -37,6 +38,13 @@
         android:text="Update/Delete Employee"
         android:id="@+id/btnUpdate"
         android:textSize="20sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:id="@+id/tvED"
+
+        />
 
 
 

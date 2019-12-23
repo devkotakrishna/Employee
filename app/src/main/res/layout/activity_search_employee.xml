@@ -11,7 +11,7 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Search Employee"
+        android:hint="Search Employee"
         android:layout_margin="25dp"
         android:id="@+id/etNameE"
         android:textSize="25sp"/>
@@ -25,9 +25,18 @@
         android:layout_margin="25dp"
         android:textSize="20sp"/>
 
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/lstEmployee"/>
 
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvData"
+            ></TextView>
+    </ScrollView>
 </LinearLayout>
