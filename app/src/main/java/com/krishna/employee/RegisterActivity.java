@@ -10,12 +10,14 @@ import android.widget.Toast;
 
 import com.krishna.employee.API.EmployeeAPI;
 import com.krishna.employee.Model.EmployeeCUD;
+import com.krishna.employee.URL.URL;
 
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+import retrofit2.http.Url;
 
 public class RegisterActivity extends AppCompatActivity {
 
@@ -48,11 +50,7 @@ Button btnAdd;
 
         EmployeeCUD employee =new EmployeeCUD(name,salary,age);
 
-        Retrofit retrofit=  new Retrofit.Builder()
-                .baseUrl(BASE_URL)
-                .addConverterFactory(GsonConverterFactory.create())
-                .build();
-        EmployeeAPI employeeAPI =retrofit.create((EmployeeAPI.class));
+        EmployeeAPI employeeAPI = URL.createInstance().create((EmployeeAPI.class));
 
         Call<Void> voidCall =employeeAPI.registerEmployee(employee);
 voidCall.enqueue(new Callback<Void>() {

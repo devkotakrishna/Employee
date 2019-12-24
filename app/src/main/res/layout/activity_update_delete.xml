@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Search Employee"
-        android:id="@+id/etEmployee"
+        android:id="@+id/etEmpNo"
         android:textSize="25sp"
         />
 
